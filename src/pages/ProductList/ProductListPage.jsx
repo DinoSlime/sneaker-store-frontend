@@ -13,7 +13,8 @@ const ProductListPage = () => {
         const fetchAllProducts = async () => {
             try {
                 setLoading(true);
-                const res = await productService.getAll();
+                const params = { page: 0, limit: 1000, size: 1000 };
+                const res = await productService.getAll(params);
                 // Lấy dữ liệu từ content (nếu là Page) hoặc trực tiếp từ res.data
                 const data = res.data?.content || res.data || [];
                 setProducts(data);
