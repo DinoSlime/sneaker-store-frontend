@@ -6,7 +6,7 @@ import categoryService from '../../../services/categoryService';
 import { formatPrice, formatDateTime } from '../../../utils/format';
 
 // 👇 URL API Upload (Adjust port if your backend is not 8080)
-const UPLOAD_API_URL = 'http://localhost:8080/api/upload/image'; 
+const UPLOAD_API_URL = 'https://sneaker-store-backend-4thr.onrender.com/api/upload/image'; 
 
 const ProductManager = () => {
     const [products, setProducts] = useState([]);

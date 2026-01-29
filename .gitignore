@@ -7,10 +7,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies (QUAN TRỌNG: Không xóa dòng này)
 node_modules
+
+# Build output
 dist
 dist-ssr
+build
+
+# Local Env Files (Chặn không cho file cấu hình local lên mạng)
 *.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Editor directories and files
 .vscode/*

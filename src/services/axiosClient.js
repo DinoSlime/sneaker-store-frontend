@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosClient = axios.create({
-    baseURL: 'http://localhost:8080/api',
+    baseURL: 'https://sneaker-store-backend-4thr.onrender.com/api',
     headers: {
         'Content-Type': 'application/json',
     },
